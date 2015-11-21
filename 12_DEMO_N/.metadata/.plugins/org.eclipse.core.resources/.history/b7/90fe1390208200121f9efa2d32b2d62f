@@ -1,0 +1,129 @@
+/*
+ * =====================================================================================
+ *
+ *       Filename:  uart.c
+ *
+ *    Description:  
+ *
+ *        Version:  1.0.0
+ *        Created:  2010.4.16
+ *       Revision:  none
+ *       Compiler:  Nios II 9.0 IDE
+ *
+ *         Author:  ÂíÈð (AVIC)
+ *			Email:  avic633@gmail.com  
+ *
+ * =====================================================================================
+ */
+
+/*--------------------------------------------------------------------------------------
+ *  Include
+ *-------------------------------------------------------------------------------------*/ 
+#include "sys/alt_irq.h"     
+#include <stdlib.h>
+#include <stdio.h>
+#include "../inc/uart.h"
+#include "../inc/sopc.h"
+
+/*--------------------------------------------------------------------------------------
+ *  Function Prototype
+ *------------------------------------------------------------------------------------*/
+static int usb2uart_send_byte(unsigned char data);
+static void usb2uart_send_string(unsigned int len, unsigned char *str);
+static int usb2uart_init(void);
+static void usb2uart_ISR(void);
+static int set_baudrate(unsigned int baudrate);
+
+/*--------------------------------------------------------------------------------------
+ *  Struct initialize
+ *------------------------------------------------------------------------------------*/
+UART_T usb2uart={
+    .receive_flag=0,
+    .receive_count=0,
+    .send_byte=usb2uart_send_byte,
+    .send_string=usb2uart_send_string,
+    .init=usb2uart_init,
+    .baudrate=set_baudrate
+    };
+
+/* 
+ * ===  FUNCTION  ======================================================================
+ *         Name:  usb2uart_send_byte
+ *  Description:  
+ * =====================================================================================
+ */
+int usb2uart_send_byte(unsigned char data)
+{
+    USB2UART->TXDATA.BITS.TRANSMIT_DATA = data;
+    while(!USB2UART->STATUS.BITS.TRDY);
+
+    return 0;
+}
+
+/* 
+ * ===  FUNCTION  ======================================================================
+ *         Name:  usb2uart_send_string
+ *  Description:  
+ * =====================================================================================
+ */
+void usb2uart_send_string(unsigned int len, unsigned char *str)
+{
+    while(len--)
+    {
+        usb2uart_send_byte(*str++);  
+    }
+}
+
+/* 
+ * ===  FUNCTION  ======================================================================
+ *         Name:  usb2uart_init
+ *  Description:  
+ * =====================================================================================
+ */
+int usb2uart_init(void)
+{
+    set_baudrate(115200);
+    
+    USB2UART->CONTROL.BITS.IRRDY=1;
+    USB2UART->STATUS.WORD=0;
+    
+    alt_irq_register(USB2UART_IRQ, NULL, usb2uart_ISR);
+
+    return 0;
+}
+
+/* 
+ * ===  FUNCTION  ======================================================================
+ *         Name:  usb2uart_ISR
+ *  Description:  
+ * =====================================================================================
+ */
+static void usb2uart_ISR(void)
+{     
+	while(!(USB2UART->STATUS.BITS.RRDY));
+
+	usb2uart.receive_buffer[usb2uart.receive_count++] = USB2UART->RXDATA.BITS.RECEIVE_DATA;
+
+	if(usb2uart.receive_buffer[usb2uart.receive_count-1]=='\n'){
+		usb2uart.receive_buffer[usb2uart.receive_count]='\0';
+//		usb2uart_send_string(usb2uart.receive_count,usb2uart.receive_buffer);
+		usb2uart.receive_count=0;
+		usb2uart.receive_flag=1;
+	}
+
+
+}
+
+/* 
+ * ===  FUNCTION  ======================================================================
+ *         Name:  set_baudrate
+ *  Description:  
+ * =====================================================================================
+ */
+int set_baudrate(unsigned int baudrate)
+{    
+	USB2UART->DIVISOR.WORD=(unsigned int)(ALT_CPU_FREQ/baudrate+0.5);
+
+	return 0;
+}
+

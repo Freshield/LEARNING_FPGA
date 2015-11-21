@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun May 04 12:48:39 2014
+Quartus II 64-Bit Version : 11.0 Build 208 07/03/2011 SP 1 SJ Full Version
+Revision Name : HELLO
+Top-level Entity Name : HELLO
+Family : Cyclone IV E
+Total logic elements : 3,987
+    Total combinational functions : 3,235
+    Dedicated logic registers : 2,365
+Total registers : 2365
+Total pins : 74
+Total virtual pins : 0
+Total memory bits : 55,680
+Embedded Multiplier 9-bit elements : 4
+Total PLLs : 1

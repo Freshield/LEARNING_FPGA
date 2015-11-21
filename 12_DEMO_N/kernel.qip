@@ -1,0 +1,25 @@
+# clk
+# cpu
+set_global_assignment -name SDC_FILE [file join $::quartus(qip_path) cpu.sdc]
+set_global_assignment -name SOURCE_FILE [file join $::quartus(qip_path) cpu.ocp]
+# sysid
+# sdram
+# epcs
+# jtag_uart
+# led
+# KEY2
+# KEY3
+# KEY4
+# uart
+# sda
+# scl
+# rtc_sclk
+# rtc_rst_n
+# rtc_data
+# buzzer
+# dig
+# sel
+# timer
+# null
+set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID 5404A604EA9A00000145045288AD 
+ 

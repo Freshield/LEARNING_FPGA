@@ -1,0 +1,123 @@
+Altera SOPC Builder Version 11.01 Build 208
+Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.
+
+
+No .sopc_builder configuration file(!)
+# 2014.03.28 00:15:31 (*) mk_custom_sdk starting
+# 2014.03.28 00:15:31 (*) Reading project F:/AX301/TEST/DEMO_N/kernel.ptf.
+
+# 2014.03.28 00:15:31 (*) Finding all CPUs
+# 2014.03.28 00:15:31 (*) Finding all available components
+# 2014.03.28 00:15:31 (*) Reading F:/AX301/TEST/DEMO_N/.sopc_builder/install.ptf
+
+# 2014.03.28 00:15:31 (*) Found 63 components
+
+# 2014.03.28 00:15:32 (*) Finding all peripherals
+
+# 2014.03.28 00:15:32 (*) Finding software components
+
+# 2014.03.28 00:15:32 (*) (Legacy SDK Generation Skipped)
+# 2014.03.28 00:15:32 (*) (All TCL Script Generation Skipped)
+# 2014.03.28 00:15:32 (*) (No Libraries Built)
+# 2014.03.28 00:15:32 (*) (Contents Generation Skipped)
+# 2014.03.28 00:15:32 (*) mk_custom_sdk finishing
+
+# 2014.03.28 00:15:32 (*) Starting generation for system: kernel.
+
+.
+.
+.
+.
+.
+..
+..
+...
+.....
+.
+.
+
+# 2014.03.28 00:15:33 (*) Running Generator Program for cpu
+
+# 2014.03.28 00:15:35 (*) Starting Nios II generation
+# 2014.03.28 00:15:35 (*)   Checking for plaintext license.
+# 2014.03.28 00:15:36 (*)   Plaintext license not found.
+# 2014.03.28 00:15:36 (*)   Checking for encrypted license (non-evaluation).
+# 2014.03.28 00:15:36 (*)   Encrypted license found.  SOF will not be time-limited.
+# 2014.03.28 00:15:36 (*)   Getting CPU configuration settings
+# 2014.03.28 00:15:36 (*)   Elaborating CPU configuration settings
+# 2014.03.28 00:15:36 (*)   Creating all objects for CPU
+
+# 2014.03.28 00:15:36 (*)     Testbench
+# 2014.03.28 00:15:36 (*)     Instruction decoding
+# 2014.03.28 00:15:36 (*)       Instruction fields
+# 2014.03.28 00:15:37 (*)       Instruction decodes
+# 2014.03.28 00:15:37 (*)       Signals for RTL simulation waveforms
+# 2014.03.28 00:15:38 (*)       Instruction controls
+# 2014.03.28 00:15:38 (*)     Pipeline frontend
+# 2014.03.28 00:15:38 (*)     Pipeline backend
+# 2014.03.28 00:15:42 (*)   Generating HDL from CPU objects
+# 2014.03.28 00:15:45 (*)   Creating encrypted HDL
+
+# 2014.03.28 00:15:46 (*) Done Nios II generation
+
+# 2014.03.28 00:15:46 (*) Running Generator Program for sysid
+
+# 2014.03.28 00:15:48 (*) Running Generator Program for sdram
+
+# 2014.03.28 00:15:49 (*) Running Generator Program for epcs
+
+# 2014.03.28 00:15:51 (*) Running Generator Program for jtag_uart
+
+# 2014.03.28 00:15:52 (*) Running Generator Program for led
+
+# 2014.03.28 00:15:53 (*) Running Generator Program for KEY2
+
+# 2014.03.28 00:15:54 (*) Running Generator Program for KEY3
+
+# 2014.03.28 00:15:56 (*) Running Generator Program for KEY4
+
+# 2014.03.28 00:15:57 (*) Running Generator Program for uart
+
+# 2014.03.28 00:15:59 (*) Running Generator Program for sda
+
+# 2014.03.28 00:16:00 (*) Running Generator Program for scl
+
+# 2014.03.28 00:16:01 (*) Running Generator Program for rtc_sclk
+
+# 2014.03.28 00:16:02 (*) Running Generator Program for rtc_rst_n
+
+# 2014.03.28 00:16:03 (*) Running Generator Program for rtc_data
+
+# 2014.03.28 00:16:04 (*) Running Generator Program for buzzer
+
+# 2014.03.28 00:16:06 (*) Running Generator Program for dig
+
+# 2014.03.28 00:16:07 (*) Running Generator Program for sel
+
+# 2014.03.28 00:16:08 (*) Running Generator Program for timer
+
+.
+
+
+# 2014.03.28 00:16:09 (*) Running Test Generator Program for sdram
+
+# 2014.03.28 00:16:10 (*) Making arbitration and system (top) modules.
+
+# 2014.03.28 00:16:19 (*) Generating Quartus symbol for top level: kernel
+
+# 2014.03.28 00:16:19 (*) Symbol F:/AX301/TEST/DEMO_N/kernel.bsf already exists, no need to regenerate
+# 2014.03.28 00:16:19 (*) Creating command-line system-generation script: F:/AX301/TEST/DEMO_N/kernel_generation_script
+
+# 2014.03.28 00:16:19 (*) Running setup for HDL simulator: modelsim
+
+
+# 2014.03.28 00:16:20 (*) Completed generation for system: kernel.
+# 2014.03.28 00:16:20 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
+  SOPC Builder database : F:/AX301/TEST/DEMO_N/kernel.ptf 
+  System HDL Model : F:/AX301/TEST/DEMO_N/kernel.v 
+  System Generation Script : F:/AX301/TEST/DEMO_N/kernel_generation_script 
+
+# 2014.03.28 00:16:20 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
+
+
+Press 'Exit' to exit.

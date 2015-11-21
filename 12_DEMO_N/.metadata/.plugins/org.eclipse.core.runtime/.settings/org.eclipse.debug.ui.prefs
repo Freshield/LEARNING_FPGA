@@ -1,0 +1,4 @@
+#Sun May 04 14:38:37 CST 2014
+org.eclipse.debug.ui.switch_perspective_on_suspend=always
+org.eclipse.debug.ui.build_before_launch=false
+eclipse.preferences.version=1
