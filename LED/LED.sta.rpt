@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for LED
-Sat Nov 21 15:57:50 2015
+Sat Nov 21 16:19:43 2015
 Quartus II 64-Bit Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Full Version
 
 
@@ -660,8 +660,8 @@ No paths to report.
 ; -3.016 ; led0_module:U1|Count1[11] ; led0_module:U1|rLED_Out   ; CLK          ; CLK         ; 1.000        ; -0.079     ; 3.939      ;
 ; -3.005 ; led0_module:U1|Count1[15] ; led3_module:U4|rLED_Out   ; CLK          ; CLK         ; 1.000        ; -0.071     ; 3.936      ;
 ; -3.004 ; led0_module:U1|Count1[0]  ; led0_module:U1|Count1[9]  ; CLK          ; CLK         ; 1.000        ; -0.075     ; 3.931      ;
-; -2.998 ; led0_module:U1|Count1[21] ; led0_module:U1|Count1[6]  ; CLK          ; CLK         ; 1.000        ; -0.072     ; 3.928      ;
 ; -2.998 ; led0_module:U1|Count1[3]  ; led0_module:U1|Count1[18] ; CLK          ; CLK         ; 1.000        ; -0.074     ; 3.926      ;
+; -2.998 ; led0_module:U1|Count1[21] ; led0_module:U1|Count1[6]  ; CLK          ; CLK         ; 1.000        ; -0.072     ; 3.928      ;
 ; -2.997 ; led0_module:U1|Count1[21] ; led0_module:U1|Count1[0]  ; CLK          ; CLK         ; 1.000        ; -0.072     ; 3.927      ;
 ; -2.981 ; led0_module:U1|Count1[11] ; led0_module:U1|Count1[18] ; CLK          ; CLK         ; 1.000        ; -0.071     ; 3.912      ;
 ; -2.968 ; led0_module:U1|Count1[13] ; led0_module:U1|Count1[14] ; CLK          ; CLK         ; 1.000        ; -0.074     ; 3.896      ;
@@ -1473,7 +1473,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Full Version
-    Info: Processing started: Sat Nov 21 15:57:43 2015
+    Info: Processing started: Sat Nov 21 16:19:36 2015
 Info: Command: quartus_sta LED -c LED
 Info: qsta_default_script.tcl version: #1
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1567,7 +1567,7 @@ Info: Design is not fully constrained for setup requirements
 Info: Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 382 megabytes
-    Info: Processing ended: Sat Nov 21 15:57:50 2015
+    Info: Processing ended: Sat Nov 21 16:19:43 2015
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:03
 

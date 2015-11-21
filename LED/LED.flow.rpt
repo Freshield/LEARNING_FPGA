@@ -1,5 +1,5 @@
 Flow report for LED
-Sat Nov 21 15:57:50 2015
+Sat Nov 21 16:19:43 2015
 Quartus II 64-Bit Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Sat Nov 21 15:57:45 2015          ;
+; Flow Status                        ; Successful - Sat Nov 21 16:19:37 2015          ;
 ; Quartus II 64-Bit Version          ; 11.0 Build 208 07/03/2011 SP 1 SJ Full Version ;
 ; Revision Name                      ; LED                                            ;
 ; Top-level Entity Name              ; top_module                                     ;
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/21/2015 15:57:36 ;
+; Start date & time ; 11/21/2015 16:19:28 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; LED                 ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 101504298775713.144813945602284       ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 101504298775713.144814076802992       ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --         ;
 ; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                     ; --            ; --          ; --         ;
@@ -96,9 +96,9 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 341 MB              ; 00:00:01                           ;
 ; Fitter                    ; 00:00:03     ; 1.0                     ; 484 MB              ; 00:00:04                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 326 MB              ; 00:00:02                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 326 MB              ; 00:00:01                           ;
 ; TimeQuest Timing Analyzer ; 00:00:07     ; 1.0                     ; 382 MB              ; 00:00:03                           ;
-; Total                     ; 00:00:13     ; --                      ; --                  ; 00:00:10                           ;
+; Total                     ; 00:00:12     ; --                      ; --                  ; 00:00:09                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
