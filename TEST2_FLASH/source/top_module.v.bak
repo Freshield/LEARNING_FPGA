@@ -1,0 +1,53 @@
+module top_module
+(
+    CLK,RSTn,FLASH_LED,FLOW_LED
+);
+
+//**********************************************
+//IO
+
+input CLK;
+input RSTn;
+output FLASH_LED;
+output[2:0]FLOW_LED;
+
+//**********************************************
+//include module
+
+wire wFLASH_LED;
+
+flash_module U1
+(
+    .CLK(CLK),
+	.RSTn(RSTn),
+	.LED_Out(rFLASH_LED)
+);
+
+wire wFLOW_LED;
+
+flow_module U2
+(
+    .CLK(CLK),
+	.RSTn(RSTn),
+	.LED_Out(rFLOW_LED)
+);
+
+//**********************************************
+
+assign FLASH_LED = rFLASH_LED;
+assign FLOW_LED = rFLOW_LED;
+
+//**********************************************
+
+endmodule
+
+
+
+
+
+
+
+
+
+
+

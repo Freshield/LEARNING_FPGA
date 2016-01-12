@@ -1,0 +1,143 @@
+Quartus II 64-Bit
+Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Full Version
+15
+1175
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+flash_module
+# storage
+db|FLASH.(1).cnf
+db|FLASH.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+source|flash_module.v
+633368e31d71d1e84bd6ded8ff79eb0
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+T50MS
+1011111010111100000111111
+PARAMETER_UNSIGNED_BIN
+DEF
+}
+# hierarchies {
+flash_module:U1
+}
+# macro_sequence
+
+# end
+# entity
+top_module
+# storage
+db|FLASH.(0).cnf
+db|FLASH.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+source|top_module.v
+9511b37732e6e2b46bcc01e3ba1f84
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+flow_module
+# storage
+db|FLASH.(2).cnf
+db|FLASH.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+source|flow_module.v
+ac8dd47a9f2fe73360be529ec62e58
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+T1MS
+1100001101001111
+PARAMETER_UNSIGNED_BIN
+DEF
+}
+# hierarchies {
+flow_module:U2
+}
+# macro_sequence
+
+# end
+# complete
+

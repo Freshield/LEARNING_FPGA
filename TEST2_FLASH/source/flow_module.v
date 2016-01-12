@@ -1,0 +1,120 @@
+module flow_module
+(
+    CLK,RSTn,LED_Out
+);
+
+//**********************************************
+//IO
+input CLK;
+input RSTn;
+output [2:0]LED_Out;
+
+//**********************************************
+//1MS parameter
+//50Mhz,1MS = 50 000 - 1 = 49 999
+parameter T1MS = 16'd49_999;
+
+//**********************************************
+//make 1MS
+
+reg [15:0]Count1MS;
+
+always@(posedge CLK or negedge RSTn)
+if(!RSTn)
+    Count1MS<=16'd0;
+else if(Count1MS == T1MS)
+    Count1MS<=16'd0;
+else
+    Count1MS <= Count1MS + 1'b1;
+
+//**********************************************
+//make 500MS
+
+reg [8:0]Count500MS;
+
+always@(posedge CLK or negedge RSTn)
+if(!RSTn)
+    Count500MS<=9'd0;
+else if(Count500MS == 9'd500)
+    Count500MS<=9'd0;
+else if(Count1MS == T1MS)
+    Count500MS<=Count500MS + 1'b1;
+	
+//**********************************************
+//flow
+
+reg [2:0]rLED_Out;
+
+always@(posedge CLK or negedge RSTn)
+if(!RSTn)
+    rLED_Out<=3'b001;
+	 
+else if(Count500MS == 9'd500)
+
+    begin
+		    //rLED_Out<={rLED_Out[1:0],1'b0};
+			 if(rLED_Out == 3'b000 || rLED_Out == 3'b100)
+			
+			 rLED_Out<=3'b001;
+			 
+			 else 
+			 rLED_Out<= rLED_Out<<1;
+			     
+	 end
+
+//**********************************************
+
+assign LED_Out = rLED_Out;
+
+//**********************************************
+
+endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
